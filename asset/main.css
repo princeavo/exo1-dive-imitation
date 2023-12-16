@@ -117,6 +117,7 @@ li {
 
 .section_container p {
   width: 60%;
+  text-align: justify;
 }
 
 .section_container img {
@@ -141,6 +142,14 @@ ul {
 }
 .subsection1 div {
   width: 49%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 10px;
+}
+.subsection1 div p:last-child {
+  text-align: right;
 }
 
 #coffeMenuList {
@@ -156,8 +165,8 @@ ul {
   gap: 0;
 }
 #coffeMenuList .coffeMenuListItem div img {
-  width: 120px;
-  height: 120px;
+  width: 20%;
+  height: 20%;
   object-fit: cover;
 }
 #coffeMenuList .coffeMenuListItem div .price {
@@ -173,24 +182,29 @@ iframe {
 }
 footer {
   margin-top: 30px;
-  background-color: #000;
+  background-color: #251e19;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding-block: 20px;
+  height: 75px;
 }
 footer nav {
-  width: 100%;
+  /* width: 100%; */
 }
 footer nav ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 20px;
 }
 footer nav ul {
   /* list-style: none; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 footer nav ul a {
   color: #fff;
@@ -200,7 +214,15 @@ footer nav ul img {
   height: auto;
   object-fit: cover;
 }
-#lastFooterLink {
+/* #lastFooterLink {
   position: relative;
   left: -50px;
+} */
+
+dt {
+  width: 80px;
+}
+footer p {
+  width: 100%;
+  text-align: center;
 }
